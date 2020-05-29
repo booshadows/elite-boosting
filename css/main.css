@@ -829,11 +829,16 @@ option {
 		margin-top: 2rem;
 	}
 
+	.header {
+		background-size: cover;
+	}
+
 }
 
 @media screen and (max-width: 540px) {
 	.header {
 		height: 100%;
+		
 	}
 
 	.custom-select {
@@ -909,8 +914,5 @@ option {
 		margin-bottom: 10px;
 	}
 
-	.header {
-		background-size: cover;
-		background-position: right;
-	}
+	
 }

@@ -834,6 +834,10 @@ option {
 		height: 100% !important;
 	}
 
+	#secTitle {
+		margin-top: 2rem !important;
+	}
+
 }
 
 @media screen and (max-width: 540px) {

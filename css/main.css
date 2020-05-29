@@ -838,6 +838,11 @@ option {
 		margin-top: 2rem !important;
 	}
 
+	#why-left-side {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
 }
 
 @media screen and (max-width: 540px) {

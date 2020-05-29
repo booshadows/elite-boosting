@@ -843,6 +843,16 @@ option {
 		margin-bottom: 2rem;
 	}
 
+	#footer-contacts .title,
+	#footer-contacts .content {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	#footer-terms {
+		margin-top: 40px;
+	}
+
 }
 
 @media screen and (max-width: 540px) {
@@ -918,11 +928,7 @@ option {
 		line-height: 0;
 	}
 
-	#footer-contacts .title,
-	#footer-contacts .content {
-		text-align: center;
-		margin-bottom: 10px;
-	}
+
 
 	
 }

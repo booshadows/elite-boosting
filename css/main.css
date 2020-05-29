@@ -659,7 +659,7 @@ option {
 
 .feedback-carousel .owl-nav {
 	left: 0;
-	bottom: 0;
+	bottom: -3rem;
 	top: auto;
 }
 
@@ -736,25 +736,20 @@ option {
 	border-bottom: 1px solid #212529;
 }
 
-#footer-left {
-	width: 35%;
-	float: left;
-	color: #fff;
+#footer-left .d-flex {
+	justify-content: center;
+	align-items: center;
 	height: 100%;
 }
 
-
-
-
-
-#footer-right {
-	width: 65%;
-	float: right;
-	height: 100%;
+#footer-left .logoName {
+	margin-left: 3rem;
 }
 
 #footer-right ul {
 	height: 100%;
+	margin-bottom: 0;
+	justify-content: flex-end;
 }
 
 #footer-right ul li {
@@ -762,7 +757,6 @@ option {
 	display: inline-block;
 	color: #505562;
 	vertical-align: middle;
-	height: 100%;
 }
 
 
@@ -776,6 +770,7 @@ option {
 #footer-contacts {
 	width: 100%;
 	height: auto;
+	margin-top: 40px;
 }
 
 #footer-contacts table {
@@ -788,7 +783,7 @@ option {
 	padding-top: 0;
 }
 
-#footer-contacts table tr td a {
+#footer-contacts .content {
 	color: #fff;
 	text-decoration: none;
 }
@@ -801,16 +796,12 @@ option {
 
 
 #terms-left {
-	width: 60%;
 	margin-bottom: 0;
 
 }
 
 #terms-right {
-	width: 40%;
 	height: 100%;
-
-
 }
 
 #terms-right ul li {
@@ -831,6 +822,15 @@ option {
 }
 
 /* responsive */
+
+@media screen and (max-width: 991px) {
+
+	#footerNav {
+		margin-top: 2rem;
+	}
+
+}
+
 @media screen and (max-width: 540px) {
 	.header {
 		height: 100%;
@@ -880,6 +880,7 @@ option {
 		text-align: center;
 
 	}
+
 	#WhyFirst {
 		width: 100%;
 	}
@@ -887,7 +888,29 @@ option {
 	.feedback-carousel .owl-nav {
 		top: auto !important;
 	}
+
 	#newsletterInput {
 		width: 100%;
+	}
+
+	#footer-right ul {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#footer-right ul li a {
+		padding: 1.5rem 0;
+		line-height: 0;
+	}
+
+	#footer-contacts .title,
+	#footer-contacts .content {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.header {
+		background-size: cover;
+		background-position: right;
 	}
 }

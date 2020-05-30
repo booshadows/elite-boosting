@@ -1264,6 +1264,26 @@ section {
 		margin-top: 40px;
 	}
 
+	.general-right {
+		padding: 0;
+	}
+
+	.account .col-lg {
+		text-align: center;
+	}
+
+	.general-left {
+		border-right: 0px solid #e4e8f2;
+	}
+
+	.general-left p {
+		width: 100%;
+	}
+
+	.general-left {
+		text-align: center;
+	}
+
 }
 
 @media screen and (max-width: 540px) {

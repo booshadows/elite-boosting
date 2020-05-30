@@ -586,7 +586,8 @@ option {
 	border-image-slice: 5;
 }
 
-.options:hover {
+.options:hover,
+.account:hover {
 	border-image-source: linear-gradient(to right, #5b0bd3 0%, #0bd360 100%);
 }
 
@@ -1177,6 +1178,59 @@ section {
 }
 
 /* faceit */
+
+/* account */
+
+.general-info p {
+	color: #b0b6be;
+}
+
+
+.general-left {
+	border-right: 1px solid #e4e8f2;
+}
+
+.general-left p {
+	width: 80%;
+}
+
+.general-right {
+	padding-left: 3rem;
+}
+
+.wdg {
+	margin-bottom: 10px;
+}
+
+.wdg span {
+	color: #b0b5be;
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+.account {
+	padding: 20px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	border-image-source: linear-gradient(to right, #a0a9b6 0%, #e4e8f2 100%);
+	border-image-slice: 5;
+	margin-bottom: 15px;
+}
+
+.account span {
+	color: #b0b5be;
+}
+
+.price-small {
+	color: #000 !important;
+	font-size: 20px;
+	font-weight: bold;
+}
+.bold-small {
+	color: #000 !important;
+	font-weight: bold;
+}
+/* account */
 
 /* responsive */
 

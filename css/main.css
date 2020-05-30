@@ -1050,7 +1050,7 @@ option {
 	height: 100%;
 	width: 36px;
 	right: 0px;
-	top: 15px;
+	top: 20px;
 
 	transition: all 0.1s;
 }
@@ -1085,7 +1085,7 @@ option {
 .selected,
 .option1,
 .selected1 {
-	padding: 12px 24px;
+	padding: 17px 0px;
 	cursor: pointer;
 }
 
@@ -1167,6 +1167,16 @@ section {
 }
 
 /* rank */
+
+
+/* faceit */
+
+.faceit-select label {
+	font-size: 14px;
+	color: #b0b5be;
+}
+
+/* faceit */
 
 /* responsive */
 

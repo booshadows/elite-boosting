@@ -17,7 +17,7 @@ button {
 	height: 100vh;
 	background-image: url('../img/bg-1.jpg');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-position: center;
 }
 
@@ -123,7 +123,7 @@ nav {
 	display: inline-block;
 	position: relative;
 	height: 100%;
-	line-height: 6.25rem;
+	line-height: 6.6rem;
 }
 
 #navbarNav ul li:hover {
@@ -827,6 +827,90 @@ option {
 
 /* rank */
 
+.extra-boost {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 30px;
+	padding-top: 7px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-right: 5rem;
+	margin-top: 2rem;
+	padding-left: 0;
+}
+
+.customcheck {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+.customcheck input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	background-color: #eee;
+	border-radius: 5px;
+}
+
+
+.customcheck:hover input~.checkmark {
+	background-color: #ccc;
+}
+
+
+.customcheck input:checked~.checkmark {
+	background-color: #000;
+	border-radius: 5px;
+}
+
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.customcheck input:checked~.checkmark:after {
+	display: block;
+}
+
+.customcheck .checkmark:after {
+	left: 10px;
+	top: 2px;
+	width: 10px;
+	height: 20px;
+	border: solid #08c115;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.customcheck {
+	color: #000;
+	font-size: 16px;
+	padding-top: 5px;
+    padding-left: 42px;
+}
+
 #orderProgress {
 	background-color: #5b0bd3;
 }
@@ -899,10 +983,10 @@ option {
 	background:
 		/* gradient can be an image */
 		linear-gradient(to left,
-		rgba(11, 210, 96, 1)0%,
-		rgba(46, 125, 145, 1) 12%,
-		rgba(28, 168, 120, 1) 47%,
-		rgba(90, 13, 210, 1) 100%) left bottom transparent no-repeat;
+			rgba(11, 210, 96, 1)0%,
+			rgba(46, 125, 145, 1) 12%,
+			rgba(28, 168, 120, 1) 47%,
+			rgba(90, 13, 210, 1) 100%) left bottom transparent no-repeat;
 	background-size: 100% 1px;
 	/* if linear-gradient, we need to resize it */
 }
@@ -1006,7 +1090,6 @@ option {
 
 .select-box .options-container,
 .options-container1 {
-	background: #a1a1a1;
 	color: #000 !important;
 	max-height: 0;
 	width: 100%;
@@ -1014,19 +1097,24 @@ option {
 	transition: all 0.4s;
 	border-radius: 8px;
 	overflow: hidden;
-
 	order: 1;
+    position: absolute;
+    top: 8rem;
+    z-index: 9;
+	background-color: #fff !important;
+	background-size: 100% 0px !important;
+	
 }
 
 .rank-select {
 	display: flex;
 	align-items: center;
-    padding: 2rem 0;
+	padding: 2rem 0;
 }
 
 .rank-img {
 	width: 155px;
-    height: 60px;
+	height: 60px;
 	margin: 0 auto;
 }
 
@@ -1086,13 +1174,19 @@ option {
 .selected,
 .option1,
 .selected1 {
-	padding: 17px 0px;
+	padding: 17px 10px;
 	cursor: pointer;
 }
 
 .select-box .option:hover,
 .option1:hover {
-	background: #414b57;
+	background: rgba(65, 75, 87, 0.1);
+	
+}
+
+.desired-wins {
+	font-size: 14px;
+    color: #b0b5be;
 }
 
 .select-box label {
@@ -1226,10 +1320,12 @@ section {
 	font-size: 20px;
 	font-weight: bold;
 }
+
 .bold-small {
 	color: #000 !important;
 	font-weight: bold;
 }
+
 /* account */
 
 /* responsive */

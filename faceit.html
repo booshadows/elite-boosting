@@ -164,10 +164,12 @@
 
 							</div>
 							<div class="row row-border">
-								<label class="control control-checkbox">1 win extra after boost
-									<input type="radio" name="extra_type" />
-									<div class="control_indicator"></div>
-								</label>
+								<div class="form-check extra-boost">
+									<label class="customcheck">1 win extra after boost
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									  </label>
+								  </div>
 							</div>
 							<div class="row mt-4 mb-4">
 								<div class="price">
@@ -182,9 +184,55 @@
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-							<p> ipsum dolor sit amet consectetur adipisicing elit.
-								Repudiandae quas, facere magni quisquam porro quis numquam ipsam
-								autem assumenda eligendi! Laborum quas dignissimos accusamus</p>
+							<div class="row row-border"><label class="control control-checkbox">Solo Boost
+								<input type="radio" checked="checked" name="boost_type" />
+								<div class="control_indicator"></div>
+							</label>
+							<label class="control control-checkbox">Duo/Lobby Boost
+								<input type="radio" name="boost_type" />
+								<div class="control_indicator"></div>
+							</label>
+						</div>
+
+
+						<div class="rank-select row faceit-select esea-select">
+							<div class="col-lg-4">
+								<div class="esea-img text-center mb-4"></div>
+								<label for=""><span class="mr-1"></span>Current
+									Faceit Elo</label>
+								<input type="text" class="form-control" placeholder="">
+							</div>
+							<div class="col-lg-4">
+								<div class="esea-img text-center mb-4"></div>
+								<label for=""><span class="mr-1"></span>Desired Faceit Elo</label>
+								<input type="text" class="form-control" placeholder="">
+							</div>
+
+							<div class="col-lg-4">
+								<input type="text" class="form-control promotional-input" style="margin-top:3.4rem; color: #000000;"
+									placeholder="Promotional Code">
+							</div>
+
+						</div>
+						<div class="row row-border">
+							<div class="form-check extra-boost">
+								<label class="customcheck">1 win extra after boost
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								  </label>
+							  </div>
+						</div>
+						<div class="row mt-4 mb-4">
+							<div class="price">
+								<span class="new-price">$7 USD</span>
+								<span class="sale-price">$12 USD</span>
+							</div>
+							<button class="pay-btn">Pay with G2A/Paypal</button>
+						</div>
+						<div class="row mt-4 pb-4">
+							<img src="img/g2a.jpg" class="mr-4 img-fluid" style="height: 100%;" alt="">
+							<img src="img/payg2a.png" alt="">
+						</div>
 						</div>
 						<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 

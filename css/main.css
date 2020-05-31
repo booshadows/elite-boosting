@@ -363,7 +363,7 @@ option {
 #OurStatistics {
 	width: 100%;
 	background-color: #000;
-	background-image: url("/img/footer-bg.jpg");
+	background-image: url("../img/footer-bg.jpg");
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	color: #fff;
@@ -1282,6 +1282,14 @@ section {
 
 	.general-left {
 		text-align: center;
+	}
+
+	.esea-img {
+		margin-top: 15px;
+	}
+
+	.promotional-input {
+		margin-top: 1rem !important;
 	}
 
 }

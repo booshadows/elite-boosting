@@ -128,7 +128,8 @@
 					<nav>
 						<div class="nav nav-tabs" id="nav-tab" role="tablist">
 							<a class="nav-item nav-link active first-c" id="nav-home-tab" data-toggle="tab"
-								href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Faceit Level Boosting</a>
+								href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Faceit Level
+								Boosting</a>
 							<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
 								role="tab" aria-controls="nav-profile" aria-selected="false">Faceit Elo Boosting</a>
 						</div>
@@ -149,17 +150,44 @@
 
 
 							<div class="rank-select row faceit-select">
-                                <div class="col-lg-4">
-                                    <label for=""><span class="mr-1"><img src="img/faceit1lvl.png" alt=""></span>Current Faceit Elo</label>
-									<input type="text" class="form-control" placeholder="">
-                                </div>
-                                <div class="col-lg-4">
-                                    <label for=""><span class="mr-1"><img src="img/faceit10lvl.png" alt=""></span>Current Faceit Elo</label>
-									<input type="text" class="form-control" placeholder="">
-								</div>
-                                
 								<div class="col-lg-4">
-									<input type="text" class="form-control" style="margin-top:2.7rem; color: #000000;" placeholder="Promotional Code">
+									<label for=""><span class="mr-1"><img src="img/faceit1lvl.png" alt=""></span>Current
+										Faceit Level</label>
+									<select id="minprice" required name="minprice" class="sell-textfield options-container prodoption col-lg-12">
+										<option value="">Select</option>
+										<option value="1000000">1</option>
+										<option value="2000000">2</option>
+										<option value="3000000">3</option>
+										<option value="4000000">4</option>
+										<option value="5000000">5</option>
+										<option value="6000000">6</option>
+										<option value="7000000">7</option>
+										<option value="8000000">8</option>
+										<option value="9000000">9</option>
+									</select>
+								</div>
+								<div class="col-lg-4">
+									<label for=""><span class="mr-1"><img src="img/faceit10lvl.png"
+												alt=""></span>Current Faceit Level</label>
+									<select id="maxprice" required name="maxprice" class="sell-textfield options-container prodoption col-lg-12">
+										<option value="">Select</option>
+										<option value="1000000">1</option>
+										<option value="2000000">2</option>
+										<option value="3000000">3</option>
+										<option value="4000000">4</option>
+										<option value="5000000">5</option>
+										<option value="6000000">6</option>
+										<option value="7000000">7</option>
+										<option value="8000000">8</option>
+										<option value="9000000">9</option>
+										<option value="10000000">10</option>
+
+									</select>
+								</div>
+
+								<div class="col-lg-4">
+									<input type="text" class="form-control promotional" style="margin-top:2.7rem; color: #000000;"
+										placeholder="Promotional Code">
 								</div>
 
 							</div>
@@ -168,8 +196,8 @@
 									<label class="customcheck">1 win extra after boost
 										<input type="checkbox">
 										<span class="checkmark"></span>
-									  </label>
-								  </div>
+									</label>
+								</div>
 							</div>
 							<div class="row mt-4 mb-4">
 								<div class="price">
@@ -185,54 +213,54 @@
 						</div>
 						<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 							<div class="row row-border"><label class="control control-checkbox">Solo Boost
-								<input type="radio" checked="checked" name="boost_type" />
-								<div class="control_indicator"></div>
-							</label>
-							<label class="control control-checkbox">Duo/Lobby Boost
-								<input type="radio" name="boost_type" />
-								<div class="control_indicator"></div>
-							</label>
-						</div>
-
-
-						<div class="rank-select row faceit-select esea-select">
-							<div class="col-lg-4">
-								<div class="esea-img text-center mb-4"></div>
-								<label for=""><span class="mr-1"></span>Current
-									Faceit Elo</label>
-								<input type="text" class="form-control" placeholder="">
-							</div>
-							<div class="col-lg-4">
-								<div class="esea-img text-center mb-4"></div>
-								<label for=""><span class="mr-1"></span>Desired Faceit Elo</label>
-								<input type="text" class="form-control" placeholder="">
+									<input type="radio" checked="checked" name="boost_type" />
+									<div class="control_indicator"></div>
+								</label>
+								<label class="control control-checkbox">Duo/Lobby Boost
+									<input type="radio" name="boost_type" />
+									<div class="control_indicator"></div>
+								</label>
 							</div>
 
-							<div class="col-lg-4">
-								<input type="text" class="form-control promotional-input" style="margin-top:3.4rem; color: #000000;"
-									placeholder="Promotional Code">
-							</div>
 
-						</div>
-						<div class="row row-border">
-							<div class="form-check extra-boost">
-								<label class="customcheck">1 win extra after boost
-									<input type="checkbox">
-									<span class="checkmark"></span>
-								  </label>
-							  </div>
-						</div>
-						<div class="row mt-4 mb-4">
-							<div class="price">
-								<span class="new-price">$7 USD</span>
-								<span class="sale-price">$12 USD</span>
+							<div class="rank-select row faceit-select esea-select">
+								<div class="col-lg-4">
+									<div class="esea-img text-center mb-4"></div>
+									<label for=""><span class="mr-1"></span>Current
+										Faceit Elo</label>
+									<input type="text" class="form-control" placeholder="">
+								</div>
+								<div class="col-lg-4">
+									<div class="esea-img text-center mb-4"></div>
+									<label for=""><span class="mr-1"></span>Desired Faceit Elo</label>
+									<input type="text" class="form-control" placeholder="">
+								</div>
+
+								<div class="col-lg-4">
+									<input type="text" class="form-control promotional-input"
+										style="margin-top:3.4rem; color: #000000;" placeholder="Promotional Code">
+								</div>
+
 							</div>
-							<button class="pay-btn">Pay with G2A/Paypal</button>
-						</div>
-						<div class="row mt-4 pb-4">
-							<img src="img/g2a.jpg" class="mr-4 img-fluid" style="height: 100%;" alt="">
-							<img src="img/payg2a.png" alt="">
-						</div>
+							<div class="row row-border">
+								<div class="form-check extra-boost">
+									<label class="customcheck">1 win extra after boost
+										<input type="checkbox">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="row mt-4 mb-4">
+								<div class="price">
+									<span class="new-price">$7 USD</span>
+									<span class="sale-price">$12 USD</span>
+								</div>
+								<button class="pay-btn">Pay with G2A/Paypal</button>
+							</div>
+							<div class="row mt-4 pb-4">
+								<img src="img/g2a.jpg" class="mr-4 img-fluid" style="height: 100%;" alt="">
+								<img src="img/payg2a.png" alt="">
+							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
 
@@ -668,59 +696,65 @@
 	<script>
 		$(document).ready(function () {
 			$('.feedback-carousel').owlCarousel({
-			loop: true,
-			margin: 10,
-			nav: true,
-			navText: ["<img src='img/arrow-left-black.png'>",
-				"next slide  <img src='img/arrow-right-black.png'>"
-			],
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 1
-				},
-				1000: {
-					items: 1
+				loop: true,
+				margin: 10,
+				nav: true,
+				navText: ["<img src='img/arrow-left-black.png'>",
+					"next slide  <img src='img/arrow-right-black.png'>"
+				],
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 1
+					},
+					1000: {
+						items: 1
+					}
 				}
-			}
-		});
-		});
+			});
+			$("#minprice").change(function () {
 
+				var i = $('option:selected', this).index() + 1;
+				$("#maxprice option:lt(" + i + ")").hide();
 
-		const selected = document.querySelector(".selected");
-		const optionsContainer = document.querySelector(".options-container");
-
-		const optionsList = document.querySelectorAll(".option");
-
-		selected.addEventListener("click", () => {
-			optionsContainer.classList.toggle("active");
-		});
-
-		optionsList.forEach(o => {
-			o.addEventListener("click", () => {
-				selected.innerHTML = o.querySelector("label").innerHTML;
-				optionsContainer.classList.remove("active");
 			});
 		});
 
 
-		const selected1 = document.querySelector(".selected1");
-		const optionsContainer1 = document.querySelector(".options-container1");
+		// const selected = document.querySelector(".selected");
+		// const optionsContainer = document.querySelector(".options-container");
 
-		const optionsList1 = document.querySelectorAll(".option1");
+		// const optionsList = document.querySelectorAll(".option");
 
-		selected1.addEventListener("click", () => {
-			optionsContainer1.classList.toggle("active");
-		});
+		// selected.addEventListener("click", () => {
+		// 	optionsContainer.classList.toggle("active");
+		// });
 
-		optionsList1.forEach(o => {
-			o.addEventListener("click", () => {
-				selected1.innerHTML = o.querySelector("label").innerHTML;
-				optionsContainer1.classList.remove("active");
-			});
-		});
+		// optionsList.forEach(o => {
+		// 	o.addEventListener("click", () => {
+		// 		selected.innerHTML = o.querySelector("label").innerHTML;
+		// 		optionsContainer.classList.remove("active");
+		// 	});
+		// });
+
+
+		// const selected1 = document.querySelector(".selected1");
+		// const optionsContainer1 = document.querySelector(".options-container1");
+
+		// const optionsList1 = document.querySelectorAll(".option1");
+
+		// selected1.addEventListener("click", () => {
+		// 	optionsContainer1.classList.toggle("active");
+		// });
+
+		// optionsList1.forEach(o => {
+		// 	o.addEventListener("click", () => {
+		// 		selected1.innerHTML = o.querySelector("label").innerHTML;
+		// 		optionsContainer1.classList.remove("active");
+		// 	});
+		// });
 	</script>
 
 </body>

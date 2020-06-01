@@ -11,6 +11,10 @@ button {
 	cursor: pointer;
 }
 
+select:focus {
+	outline: none;
+}
+
 .header {
 	background-color: black;
 	width: 100%;
@@ -217,6 +221,10 @@ nav {
 
 option {
 	background-color: #000;
+}
+
+.header option {
+	color: #fff;
 }
 
 .custom-select {
@@ -908,7 +916,7 @@ option {
 	color: #000;
 	font-size: 16px;
 	padding-top: 5px;
-    padding-left: 42px;
+	padding-left: 42px;
 }
 
 #orderProgress {
@@ -1088,28 +1096,55 @@ option {
 	flex-direction: column;
 }
 
-.select-box .options-container,
-.options-container1 {
-	color: #000 !important;
-	max-height: 0;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.4s;
-	border-radius: 8px;
-	overflow: hidden;
-	order: 1;
-    position: absolute;
-    top: 8rem;
-    z-index: 9;
-	background-color: #fff !important;
-	background-size: 100% 0px !important;
-	
+select:required:invalid {
+	color: gray;
+}
+
+option[value=""][disabled] {
+	display: none;
+}
+
+option {
+	color: black;
+}
+
+.prodoption {
+	padding: 0.75rem;
+	border: 1px solid #dfe7ef;
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background: url("../img/16-interface\ -\ arrow\ bottom.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position: right 10px center;
+	padding-right: 55px;
+}
+
+
+.prodoption option {
+		margin: 40px;
+		background: #fff;
+		color: #000;
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+		padding-top: 2rem;
+		font-family: Roboto, sans-serif;
+		font-size: 16px;
+		padding-left: 15px;
+}
+
+.promotional {
+	padding: 1.5rem;
 }
 
 .rank-select {
 	display: flex;
 	align-items: center;
 	padding: 2rem 0;
+	align-items: flex-end;
 }
 
 .rank-img {
@@ -1181,12 +1216,12 @@ option {
 .select-box .option:hover,
 .option1:hover {
 	background: rgba(65, 75, 87, 0.1);
-	
+
 }
 
 .desired-wins {
 	font-size: 14px;
-    color: #b0b5be;
+	color: #b0b5be;
 }
 
 .select-box label {
@@ -1271,6 +1306,10 @@ section {
 	color: #b0b5be;
 }
 
+.label {
+	font-size: 14px;
+	color: #b0b5be;
+}
 /* faceit */
 
 /* account */

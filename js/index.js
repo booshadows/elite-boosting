@@ -45,20 +45,3 @@ $(document).ready(function () {
 
 });
 
-// coupon validation
-
-function validate(coupon) {
-    var myRe = "test";
-    var coupon = myRe.trim();
-    // var input = document.getElementById('in').value;
-    var input2 = document.getElementById('in2').value;
-    if(input2 == coupon) {
-        document.getElementsByClassName('message').innerHTML="Coupon applied!";
-        document.getElementById('err').innerHTML="";
-        return true;
-    } else {
-        document.getElementById('err').innerHTML="Invalid coupon";
-        document.getElementById('message').innerHTML="";
-        return false;
-    }
-}

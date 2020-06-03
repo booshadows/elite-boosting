@@ -38,10 +38,18 @@ $(document).ready(function () {
         $('#changeImg2').attr("src", $(this).find("option:selected").data("img-src"));
     });
 
- //   arrow rotate
- $(".select-box-lvl").click(function(){
-    $(this).find('.rotate').toggleClass("down"); 
-});
+    //   arrow rotate
+    $(".select-box-lvl").click(function () {
+        $(this).find('.rotate').toggleClass("down");
+    });
+
+    $('.sale-price').hide();
+    $(".apply-btn").click(function () {
+        $('.sale-price').show();
+        $('.new-price').addClass('sale-price');
+        $('.priceu').removeClass('sale-price');
+        $('.priceu').addClass('new-price');
+    });
+
 
 });
-

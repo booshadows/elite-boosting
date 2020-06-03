@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://kit.fontawesome.com/28728ff5fe.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -151,46 +152,69 @@
 
 							<div class="rank-select row faceit-select">
 								<div class="col-lg-4">
-									<label for=""><span class="mr-1"><img src="img/faceit1lvl.png" alt=""></span>Current
-										Faceit Level</label>
-									<select id="minprice" required name="minprice" class="sell-textfield options-container prodoption col-lg-12">
-										<option value="">Select</option>
-										<option value="1000000">1</option>
-										<option value="2000000">2</option>
-										<option value="3000000">3</option>
-										<option value="4000000">4</option>
-										<option value="5000000">5</option>
-										<option value="6000000">6</option>
-										<option value="7000000">7</option>
-										<option value="8000000">8</option>
-										<option value="9000000">9</option>
-									</select>
+									<label for="">
+										<div class="mr-1 face-it-img">
+											<img src="img/levels/1.jpg" class="img-fluid" id="changeImg" alt="">
+										</div>
+										Current
+										Faceit Level
+									</label>
+									<div class="select-box-lvl"><select id="minprice" required name="minprice"
+											class="sell-textfield options-container prodoption col-lg-12 detailprodoption">
+											<option value="">Select</option>
+											<option value="1000000" data-img-src="img/levels/1.jpg">1</option>
+											<option value="2000000" data-img-src="img/levels/2.png">2</option>
+											<option value="3000000" data-img-src="img/levels/3.png">3</option>
+											<option value="4000000" data-img-src="img/levels/4.png">4</option>
+											<option value="5000000" data-img-src="img/levels/5.png">5</option>
+											<option value="6000000" data-img-src="img/levels/6.png">6</option>
+											<option value="7000000" data-img-src="img/levels/7.png">7</option>
+											<option value="8000000" data-img-src="img/levels/8.png">8</option>
+											<option value="9000000" data-img-src="img/levels/9.png">9</option>
+										</select>
+										<i class="fas fa-angle-up rotate"></i>
+									</div>
 								</div>
 								<div class="col-lg-4">
-									<label for=""><span class="mr-1"><img src="img/faceit10lvl.png"
-												alt=""></span>Current Faceit Level</label>
-									<select id="maxprice" required name="maxprice" class="sell-textfield options-container prodoption col-lg-12">
-										<option value="">Select</option>
-										<option value="1000000">1</option>
-										<option value="2000000">2</option>
-										<option value="3000000">3</option>
-										<option value="4000000">4</option>
-										<option value="5000000">5</option>
-										<option value="6000000">6</option>
-										<option value="7000000">7</option>
-										<option value="8000000">8</option>
-										<option value="9000000">9</option>
-										<option value="10000000">10</option>
+									<label for="">
+										<div class="mr-1 face-it-img">
+											<img src="img/levels/10.jpg" class="img-fluid" id="changeImg2" alt="">
+										</div>
+										Current Faceit Level
+									</label>
+									<div class="select-box-lvl"><select id="maxprice" required name="maxprice"
+											class="sell-textfield options-container desired-level prodoption col-lg-12">
+											<option value="">Select</option>
+											<option value="1000000" data-img-src="img/levels/1.jpg">1</option>
+											<option value="2000000" data-img-src="img/levels/2.png">2</option>
+											<option value="3000000" data-img-src="img/levels/3.png">3</option>
+											<option value="4000000" data-img-src="img/levels/4.png">4</option>
+											<option value="5000000" data-img-src="img/levels/5.png">5</option>
+											<option value="6000000" data-img-src="img/levels/6.png">6</option>
+											<option value="7000000" data-img-src="img/levels/7.png">7</option>
+											<option value="8000000" data-img-src="img/levels/8.png">8</option>
+											<option value="9000000" data-img-src="img/levels/9.png">9</option>
+											<option value="10000000" data-img-src="img/levels/10.jpg">10</option>
 
-									</select>
+										</select>
+										<i class="fas fa-angle-up rotate"></i>
+									</div>
 								</div>
+								<div class="col-lg-4"></div>
 
-								<div class="col-lg-4">
-									<input type="text" class="form-control promotional" style="margin-top:2.7rem; color: #000000;"
-										placeholder="Promotional Code">
-								</div>
 
 							</div>
+							<form onsubmit=""><div class="row">
+							<div class="col-lg-4 pr-0">
+							<input type="text" name="coupon" id="in" class="form-control promotional" style="color: #000000;"
+							placeholder="Promotional Code">
+							<span class="message"></span>
+							<span class="err"></span>
+							</div>
+							<div class="col-lg-2 p-0">
+							<button class="pay-btn apply-btn" type="button" onClick="validate(coupon)" value="Submit">Apply</button>
+							</div>
+							</div></form>
 							<div class="row row-border">
 								<div class="form-check extra-boost">
 									<label class="customcheck">1 win extra after boost
@@ -236,12 +260,20 @@
 									<input type="text" class="form-control" placeholder="">
 								</div>
 
-								<div class="col-lg-4">
-									<input type="text" class="form-control promotional-input"
-										style="margin-top:3.4rem; color: #000000;" placeholder="Promotional Code">
-								</div>
+							
 
 							</div>
+							<form onsubmit=""><div class="row">
+								<div class="col-lg-4 pr-0">
+								<input type="text" name="coupon" id="in2" class="form-control promotional" style="color: #000000;"
+								placeholder="Promotional Code">
+								<span class="message"></span>
+								<span class="err"></span>
+								</div>
+								<div class="col-lg-2 p-0">
+								<button class="pay-btn apply-btn" type="button" onClick="validate(coupon)" value="Submit">Apply</button>
+								</div>
+								</div></form>
 							<div class="row row-border">
 								<div class="form-check extra-boost">
 									<label class="customcheck">1 win extra after boost
@@ -693,69 +725,7 @@
 		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
 	</script>
 	<script src="js/owl.carousel.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('.feedback-carousel').owlCarousel({
-				loop: true,
-				margin: 10,
-				nav: true,
-				navText: ["<img src='img/arrow-left-black.png'>",
-					"next slide  <img src='img/arrow-right-black.png'>"
-				],
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 1
-					},
-					1000: {
-						items: 1
-					}
-				}
-			});
-			$("#minprice").change(function () {
-
-				var i = $('option:selected', this).index() + 1;
-				$("#maxprice option:lt(" + i + ")").hide();
-
-			});
-		});
-
-
-		// const selected = document.querySelector(".selected");
-		// const optionsContainer = document.querySelector(".options-container");
-
-		// const optionsList = document.querySelectorAll(".option");
-
-		// selected.addEventListener("click", () => {
-		// 	optionsContainer.classList.toggle("active");
-		// });
-
-		// optionsList.forEach(o => {
-		// 	o.addEventListener("click", () => {
-		// 		selected.innerHTML = o.querySelector("label").innerHTML;
-		// 		optionsContainer.classList.remove("active");
-		// 	});
-		// });
-
-
-		// const selected1 = document.querySelector(".selected1");
-		// const optionsContainer1 = document.querySelector(".options-container1");
-
-		// const optionsList1 = document.querySelectorAll(".option1");
-
-		// selected1.addEventListener("click", () => {
-		// 	optionsContainer1.classList.toggle("active");
-		// });
-
-		// optionsList1.forEach(o => {
-		// 	o.addEventListener("click", () => {
-		// 		selected1.innerHTML = o.querySelector("label").innerHTML;
-		// 		optionsContainer1.classList.remove("active");
-		// 	});
-		// });
-	</script>
+	<script src="js/index.js"></script>
 
 </body>
 
